@@ -182,11 +182,11 @@
     /* Nav */
     nav a { text-decoration: none; }
     .nav-link {
-      color: #C8C4BE; font-size: 0.8rem; font-weight: 600;
+      color: #1a1a1a; font-size: 0.8rem; font-weight: 600;
       letter-spacing: 0.1em; text-transform: uppercase;
       transition: color 0.18s;
     }
-    .nav-link:hover { color: #F0EDE8; }
+    .nav-link:hover { color: #C4182A; }
     .nav-link:focus-visible { outline: 2px solid #C4182A; outline-offset: 3px; border-radius: 2px; }
 
     /* Mobile menu */
@@ -214,8 +214,8 @@
     .hero-overlay {
       position: absolute; inset: 0;
       background:
-        linear-gradient(to bottom, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 35%, rgba(13,13,13,0.92) 100%),
-        linear-gradient(to right, rgba(13,13,13,0.85) 0%, rgba(13,13,13,0.1) 55%);
+        linear-gradient(to bottom, rgba(13,13,13,0.7) 0%, rgba(13,13,13,0.45) 40%, rgba(13,13,13,0.92) 100%),
+        linear-gradient(to right, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.15) 60%);
     }
     .hero-content { position: relative; z-index: 10; }
 
@@ -313,7 +313,7 @@
 <body>
 
 <!-- ═══════════════════════════════════════ NAV ═══ -->
-<header style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,13,13,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #2A2A2A;">
+<header style="position:fixed;top:0;left:0;right:0;z-index:100;background:#fff;border-bottom:1px solid #E5E2DF;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
   <nav style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:96px;">
     <a href="/" style="display:flex;align-items:center;flex-shrink:0;">
       <img src="brand_assets/hudsons-logo2.png" alt="Hudson's Asphalt Services Inc." width="220" height="72" style="height:72px;width:auto;object-fit:contain;background:#fff;padding:8px 14px;" />
@@ -331,10 +331,10 @@
         (587) 707-8341
       </a>
       <!-- Hamburger -->
-      <button id="hamburger" aria-label="Open navigation menu" style="background:none;border:1px solid #2A2A2A;cursor:pointer;padding:9px;display:flex;flex-direction:column;gap:5px;width:40px;">
-        <span style="display:block;height:2px;background:#F0EDE8;transition:all 0.2s;"></span>
-        <span style="display:block;height:2px;background:#F0EDE8;transition:all 0.2s;"></span>
-        <span style="display:block;height:2px;background:#F0EDE8;transition:all 0.2s;"></span>
+      <button id="hamburger" aria-label="Open navigation menu" style="background:none;border:1px solid #D0CCC8;cursor:pointer;padding:9px;display:flex;flex-direction:column;gap:5px;width:40px;">
+        <span style="display:block;height:2px;background:#1a1a1a;transition:all 0.2s;"></span>
+        <span style="display:block;height:2px;background:#1a1a1a;transition:all 0.2s;"></span>
+        <span style="display:block;height:2px;background:#1a1a1a;transition:all 0.2s;"></span>
       </button>
     </div>
   </nav>
@@ -357,7 +357,7 @@
 <section id="hero" class="hero-bg">
   <img src="brand_assets/hudsons-1.jpg" alt="Hudson's Asphalt crew paving a driveway in Calgary" class="hero-photo" width="1440" height="960" />
   <div class="hero-overlay"></div>
-  <div class="hero-content" style="min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 20px 56px;">
+  <div class="hero-content" style="min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:96px 20px 56px;">
     <div style="max-width:760px;margin:0 auto;width:100%;">
       <span class="red-rule fu1"></span>
       <h1 style="font-size:clamp(3.2rem,10vw,7rem);color:#F0EDE8;margin-bottom:16px;" class="fu2">
