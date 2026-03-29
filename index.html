@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asphalt Paving Calgary | Hudson's Asphalt Services Inc.</title>
+  <meta name="description" content="Hudson's Asphalt Services — Calgary's asphalt paving specialists. Driveways, parking lots, crack sealing & sealcoating. 15+ years experience. Free estimates." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="canonical" href="[SITE URL]" /><!-- TODO: replace with final domain -->
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Asphalt Paving Calgary | Hudson's Asphalt Services Inc." />
+  <meta property="og:description" content="Calgary's asphalt paving specialists. Driveways, parking lots, crack sealing & sealcoating. 15+ years experience. Free estimates." />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:url" content="[SITE URL]" /><!-- TODO: replace with final domain -->
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Asphalt Paving Calgary | Hudson's Asphalt Services Inc." />
+  <meta name="twitter:description" content="Calgary's asphalt paving specialists. Free estimates, 15+ years experience." />
+  <meta name="twitter:image" content="/og-image.jpg" />
+
+  <!-- Fonts: Bebas Neue (display) + Barlow (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap"></noscript>
+
+  <!-- GA4 snippet: replace G-XXXXXXXXXX with real Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Hudson's Asphalt Services Inc.",
+    "url": "[SITE URL]",
+    "telephone": "+15877078341",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "81 Legacy Blvd SE #2203",
+      "addressLocality": "Calgary",
+      "addressRegion": "AB",
+      "postalCode": "T2X 2B9",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "50.8630",
+      "longitude": "-114.0286"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "areaServed": "Calgary, Airdrie, Okotoks, Chestermere, Cochrane, Strathmore",
+    "priceRange": "$$",
+    "image": "[SITE URL]/og-image.jpg",
+    "sameAs": ["https://www.facebook.com/hudsonasphaltservices"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "18",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does asphalt paving cost in Calgary?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Asphalt paving in Calgary typically ranges from $8–$15 per square foot depending on scope, surface preparation, and materials. Contact us for a free, no-obligation estimate tailored to your property." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed and insured in Alberta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Hudson's Asphalt Services Inc. is fully licensed, insured, and carries workers' compensation coverage in Alberta." }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We service Calgary and all surrounding areas including Airdrie, Okotoks, Chestermere, Cochrane, and Strathmore." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does asphalt last in Alberta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Properly installed and maintained asphalt lasts 15–25 years even in Alberta's freeze-thaw climate. Regular sealcoating and crack sealing significantly extend pavement lifespan." }
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red: '#C4182A',
+            'red-h': '#E02030',
+            'red-dk': '#9B111E',
+            ink: '#0D0D0D',
+            surface: '#161616',
+            'surface-2': '#1E1E1E',
+            border: '#2A2A2A',
+            cream: '#F0EDE8',
+            muted: '#C8C4BE',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: #0D0D0D;
+      color: #F0EDE8;
+      line-height: 1.7;
+      position: relative;
+    }
+
+    /* Subtle noise grain */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+    }
+
+    h1, h2, h3, h4, .bebas {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.04em;
+      line-height: 1.05;
+    }
+
+    /* Red rule accent */
+    .red-rule { display: block; width: 44px; height: 3px; background: #C4182A; margin-bottom: 18px; }
+
+    /* Buttons */
+    .btn-red {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #C4182A; color: #fff;
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: 0.1em;
+      padding: 14px 30px; border: none; cursor: pointer; text-decoration: none;
+      transition: background 0.18s ease, transform 0.15s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+    .btn-red:hover { background: #E02030; transform: translateY(-1px); }
+    .btn-red:active { transform: translateY(0); }
+    .btn-red:focus-visible { outline: 2px solid #E02030; outline-offset: 3px; }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: #F0EDE8;
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: 0.1em;
+      padding: 13px 30px; border: 1px solid rgba(240,237,232,0.25); cursor: pointer; text-decoration: none;
+      transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+    .btn-ghost:hover { border-color: #C4182A; color: #C4182A; background: rgba(196,24,42,0.06); }
+    .btn-ghost:focus-visible { outline: 2px solid #C4182A; outline-offset: 3px; }
+
+    /* Nav */
+    nav a { text-decoration: none; }
+    .nav-link {
+      color: #C8C4BE; font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      transition: color 0.18s;
+    }
+    .nav-link:hover { color: #F0EDE8; }
+    .nav-link:focus-visible { outline: 2px solid #C4182A; outline-offset: 3px; border-radius: 2px; }
+
+    /* Mobile menu */
+    #mobile-menu {
+      display: none; position: fixed; inset: 0;
+      background: #0D0D0D; z-index: 200;
+      flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem;
+    }
+    #mobile-menu.open { display: flex; }
+    .mob-link {
+      font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; letter-spacing: 0.06em;
+      color: #F0EDE8; text-decoration: none;
+      transition: color 0.18s;
+    }
+    .mob-link:hover { color: #C4182A; }
+
+    /* Hero */
+    .hero-bg {
+      position: relative; overflow: hidden;
+      min-height: 100svh;
+    }
+    .hero-bg img.hero-photo {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 35%, rgba(13,13,13,0.92) 100%),
+        linear-gradient(to right, rgba(13,13,13,0.85) 0%, rgba(13,13,13,0.1) 55%);
+    }
+    .hero-content { position: relative; z-index: 10; }
+
+    /* Trust bar */
+    .trust-item { border-right: 1px solid #2A2A2A; }
+    .trust-item:last-child { border-right: none; }
+    @media (max-width: 767px) { .trust-item { border-right: none; border-bottom: 1px solid #2A2A2A; } .trust-item:last-child { border-bottom: none; } }
+
+    /* Service card */
+    .svc-card {
+      background: #161616; border: 1px solid #2A2A2A;
+      padding: 28px 24px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.25s ease, transform 0.2s ease,
+        box-shadow 0.25s ease;
+    }
+    .svc-card::after {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 3px; height: 0; background: #C4182A;
+      transition: height 0.3s ease;
+    }
+    .svc-card:hover::after { height: 100%; }
+    .svc-card:hover {
+      border-color: rgba(196,24,42,0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5), 0 0 0 0 transparent;
+    }
+
+    /* Review card */
+    .rev-card {
+      background: #161616; border: 1px solid #2A2A2A;
+      padding: 32px 28px; position: relative;
+    }
+    .rev-card .quote-mark {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 5rem; color: #C4182A; opacity: 0.5;
+      position: absolute; top: 6px; left: 22px;
+      line-height: 1; pointer-events: none;
+    }
+    .stars { color: #C4182A; letter-spacing: 0.05em; }
+
+    /* Form */
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-label {
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase; color: #7A7770;
+    }
+    .form-input {
+      width: 100%; background: #1E1E1E; border: 1px solid #2A2A2A;
+      color: #F0EDE8; padding: 12px 16px;
+      font-family: 'Barlow', sans-serif; font-size: 1rem;
+      outline: none; -webkit-appearance: none; border-radius: 0;
+      transition: border-color 0.18s ease;
+    }
+    .form-input:focus { border-color: #C4182A; box-shadow: 0 0 0 2px rgba(196,24,42,0.12); }
+    .form-input::placeholder { color: #706C66; }
+    select.form-input { cursor: pointer; }
+    select.form-input option { background: #1E1E1E; color: #F0EDE8; }
+    textarea.form-input { resize: vertical; min-height: 110px; }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+    }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-36px); transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1); }
+    .reveal-left.in { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(36px); transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1); }
+    .reveal-right.in { opacity: 1; transform: translateX(0); }
+    .reveal-scale { opacity: 0; transform: scale(0.94); transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1), transform 0.6s cubic-bezier(0.22,1,0.36,1); }
+    .reveal-scale.in { opacity: 1; transform: scale(1); }
+    /* Stagger children */
+    .stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1); }
+    .stagger.in > *:nth-child(1) { opacity:1; transform:translateY(0); transition-delay:0s; }
+    .stagger.in > *:nth-child(2) { opacity:1; transform:translateY(0); transition-delay:0.1s; }
+    .stagger.in > *:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.2s; }
+    .stagger.in > *:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.3s; }
+    .stagger.in > *:nth-child(5) { opacity:1; transform:translateY(0); transition-delay:0.4s; }
+    .stagger.in > *:nth-child(6) { opacity:1; transform:translateY(0); transition-delay:0.5s; }
+
+    /* Fade-up stagger for hero */
+    @keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+    .fu1 { animation: fadeUp 0.65s ease 0.1s both; }
+    .fu2 { animation: fadeUp 0.65s ease 0.25s both; }
+    .fu3 { animation: fadeUp 0.65s ease 0.4s both; }
+    .fu4 { animation: fadeUp 0.65s ease 0.55s both; }
+    .fu5 { animation: fadeUp 0.65s ease 0.7s both; }
+
+    /* Work photo grid */
+    .work-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ NAV ═══ -->
+<header style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,13,13,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #2A2A2A;">
+  <nav style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:96px;">
+    <a href="/" style="display:flex;align-items:center;flex-shrink:0;">
+      <img src="brand_assets/hudsons-logo2.png" alt="Hudson's Asphalt Services Inc." width="220" height="72" style="height:72px;width:auto;object-fit:contain;background:#fff;padding:8px 14px;" />
+    </a>
+    <!-- Desktop links -->
+    <ul style="display:none;list-style:none;gap:32px;align-items:center;" class="desktop-nav">
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#work" class="nav-link">Our Work</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="tel:+15877078341" class="btn-red" style="font-size:0.9rem;padding:10px 20px;display:none;" class="desktop-cta" aria-label="Call Hudson's Asphalt at (587) 707-8341">
+        (587) 707-8341
+      </a>
+      <!-- Hamburger -->
+      <button id="hamburger" aria-label="Open navigation menu" style="background:none;border:1px solid #2A2A2A;cursor:pointer;padding:9px;display:flex;flex-direction:column;gap:5px;width:40px;">
+        <span style="display:block;height:2px;background:#F0EDE8;transition:all 0.2s;"></span>
+        <span style="display:block;height:2px;background:#F0EDE8;transition:all 0.2s;"></span>
+        <span style="display:block;height:2px;background:#F0EDE8;transition:all 0.2s;"></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile fullscreen menu -->
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button id="menu-close" aria-label="Close navigation menu" style="position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;color:#F0EDE8;font-size:2rem;line-height:1;">✕</button>
+  <a href="#services" class="mob-link" onclick="closeMenu()">Services</a>
+  <a href="#work" class="mob-link" onclick="closeMenu()">Our Work</a>
+  <a href="#about" class="mob-link" onclick="closeMenu()">About</a>
+  <a href="#reviews" class="mob-link" onclick="closeMenu()">Reviews</a>
+  <a href="#contact" class="mob-link" onclick="closeMenu()">Contact</a>
+  <a href="tel:+15877078341" class="btn-red" style="margin-top:8px;" aria-label="Call (587) 707-8341">(587) 707-8341</a>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════ HERO ═══ -->
+<section id="hero" class="hero-bg">
+  <img src="brand_assets/hudsons-1.jpg" alt="Hudson's Asphalt crew paving a driveway in Calgary" class="hero-photo" width="1440" height="960" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content" style="min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 20px 56px;">
+    <div style="max-width:760px;margin:0 auto;width:100%;">
+      <span class="red-rule fu1"></span>
+      <h1 style="font-size:clamp(3.2rem,10vw,7rem);color:#F0EDE8;margin-bottom:16px;" class="fu2">
+        Asphalt Paving<br>Calgary — Built<br>to Last
+      </h1>
+      <p style="font-size:1.15rem;color:rgba(240,237,232,0.8);max-width:520px;line-height:1.65;margin-bottom:32px;" class="fu3">
+        15+ years of expert asphalt paving, driveway installation, and commercial parking lot work across Calgary and surrounding areas. Fully insured. Free estimates.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;" class="fu4">
+        <a href="#contact" class="btn-red">Get a Free Estimate</a>
+        <a href="tel:+15877078341" class="btn-ghost" aria-label="Call Hudson's Asphalt at (587) 707-8341">Call (587) 707-8341</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ TRUST BAR ═══ -->
+<section id="trust" style="background:#161616;border-top:1px solid #2A2A2A;border-bottom:1px solid #2A2A2A;">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);">
+    <div class="trust-item" style="padding:28px 24px;text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:#C4182A;letter-spacing:0.04em;line-height:1;">15+</div>
+      <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#C8C4BE;margin-top:4px;">Years Experience</div>
+    </div>
+    <div class="trust-item" style="padding:28px 24px;text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:#C4182A;letter-spacing:0.04em;line-height:1;">4.9★</div>
+      <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#C8C4BE;margin-top:4px;">Google Rating</div>
+    </div>
+    <div class="trust-item" style="padding:28px 24px;text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:#C4182A;letter-spacing:0.04em;line-height:1;">500+</div>
+      <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#C8C4BE;margin-top:4px;">Jobs Completed</div>
+    </div>
+    <div class="trust-item" style="padding:28px 24px;text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:#C4182A;letter-spacing:0.04em;line-height:1;">100%</div>
+      <div style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#C8C4BE;margin-top:4px;">Licensed &amp; Insured</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ SERVICES ═══ -->
+<section id="services" style="padding:80px 20px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="reveal" style="margin-bottom:52px;">
+      <span class="red-rule"></span>
+      <h2 style="font-size:clamp(2.4rem,6vw,4rem);margin-bottom:14px;">Calgary Asphalt Services<br>Done Right</h2>
+      <p style="color:#C8C4BE;font-size:1.05rem;max-width:520px;line-height:1.65;">
+        From new driveways to commercial parking lots, we handle every phase of asphalt work — installation, maintenance, and everything in between.
+      </p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr;gap:2px;">
+      <!-- Row 1 -->
+      <div style="display:grid;grid-template-columns:1fr;gap:2px;" id="svc-grid" class="stagger">
+
+        <div class="svc-card">
+          <div style="font-size:1.6rem;margin-bottom:12px;">🛣️</div>
+          <h3 style="font-size:1.5rem;color:#F0EDE8;margin-bottom:10px;">Driveway Paving Calgary Homeowners Trust</h3>
+          <p style="color:#C8C4BE;font-size:0.95rem;line-height:1.7;">
+            A new asphalt driveway adds curb appeal and endures Alberta's brutal freeze-thaw cycles. We prep the base properly — so your investment lasts decades, not years.
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div style="font-size:1.6rem;margin-bottom:12px;">🅿️</div>
+          <h3 style="font-size:1.5rem;color:#F0EDE8;margin-bottom:10px;">Commercial Parking Lot Paving Calgary</h3>
+          <p style="color:#C8C4BE;font-size:0.95rem;line-height:1.7;">
+            First impressions start in the parking lot. We pave commercial lots of all sizes — clean edges, proper drainage grading, and smooth surfaces your customers will notice.
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div style="font-size:1.6rem;margin-bottom:12px;">🏗️</div>
+          <h3 style="font-size:1.5rem;color:#F0EDE8;margin-bottom:10px;">Commercial Asphalt Paving</h3>
+          <p style="color:#C8C4BE;font-size:0.95rem;line-height:1.7;">
+            Large-scale commercial paving for industrial sites, condominiums, and multi-unit properties. We bring the equipment and manpower to get big jobs done right — on schedule.
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div style="font-size:1.6rem;margin-bottom:12px;">🔧</div>
+          <h3 style="font-size:1.5rem;color:#F0EDE8;margin-bottom:10px;">Crack Sealing Calgary</h3>
+          <p style="color:#C8C4BE;font-size:0.95rem;line-height:1.7;">
+            Cracks let water in — and in Calgary, water plus frost means pavement failure. Crack sealing is the most cost-effective way to extend the life of your existing asphalt by years.
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div style="font-size:1.6rem;margin-bottom:12px;">🛡️</div>
+          <h3 style="font-size:1.5rem;color:#F0EDE8;margin-bottom:10px;">Asphalt Sealcoating Calgary</h3>
+          <p style="color:#C8C4BE;font-size:0.95rem;line-height:1.7;">
+            Sealcoating protects your pavement from UV damage, oil spills, and moisture penetration — adding years of life at a fraction of replacement cost. Applied right, it looks sharp too.
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div style="font-size:1.6rem;margin-bottom:12px;">🎨</div>
+          <h3 style="font-size:1.5rem;color:#F0EDE8;margin-bottom:10px;">Line Painting Calgary</h3>
+          <p style="color:#C8C4BE;font-size:0.95rem;line-height:1.7;">
+            Fresh parking stalls, accessible spaces, fire lanes, and directional markings. Crisp line painting transforms how a lot functions and how your property looks from the street.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ WORK GALLERY ═══ -->
+<section id="work" style="padding:0 20px 80px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="reveal" style="margin-bottom:40px;">
+      <span class="red-rule"></span>
+      <h2 style="font-size:clamp(2.4rem,6vw,4rem);">Our Work Across Calgary</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr;gap:3px;" class="stagger">
+      <div class="reveal-scale" style="position:relative;overflow:hidden;aspect-ratio:16/9;">
+        <img src="brand_assets/hudsons-2.jpg" alt="Fresh line painting on Calgary parking lot by Hudson's Asphalt Services" class="work-img" loading="lazy" width="800" height="450" />
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,13,0.85),transparent);padding:20px 24px;">
+          <span style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:0.08em;color:#F0EDE8;">Parking Lot Paving &amp; Line Painting</span>
+        </div>
+      </div>
+      <div class="reveal-scale" style="position:relative;overflow:hidden;aspect-ratio:16/9;">
+        <img src="brand_assets/hudsons-3.webp" alt="Crack sealing before and after on Calgary asphalt by Hudson's Asphalt" class="work-img" loading="lazy" width="800" height="450" />
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,13,0.85),transparent);padding:20px 24px;">
+          <span style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:0.08em;color:#F0EDE8;">Crack Sealing — Before &amp; After</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ ABOUT ═══ -->
+<section id="about" style="background:#161616;border-top:1px solid #2A2A2A;border-bottom:1px solid #2A2A2A;padding:80px 20px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:1fr;gap:48px;align-items:center;">
+      <div class="reveal-left" style="position:relative;">
+        <img src="brand_assets/hudsons-1.jpg" alt="Hudson's Asphalt Services crew on job site in Calgary" loading="lazy" width="640" height="480" style="width:100%;height:280px;object-fit:cover;display:block;" />
+        <!-- Red corner accent -->
+        <div style="position:absolute;top:0;left:0;width:4px;height:48px;background:#C4182A;"></div>
+        <div style="position:absolute;top:0;left:0;width:48px;height:4px;background:#C4182A;"></div>
+      </div>
+      <div class="reveal-right">
+        <span class="red-rule"></span>
+        <h2 style="font-size:clamp(2.4rem,6vw,3.8rem);margin-bottom:18px;">Best in West —<br>15+ Years of Calgary Asphalt</h2>
+        <p style="color:#C8C4BE;font-size:1rem;line-height:1.75;margin-bottom:20px;">
+          Hudson's Asphalt Services Inc. has been paving driveways, parking lots, and commercial properties across Calgary and surrounding areas for over 15 years. We specialize in asphalt paving, patching, crack sealing, sealcoating, and line painting — delivering commercial-grade results on every job, big or small.
+        </p>
+        <p style="color:#C8C4BE;font-size:1rem;line-height:1.75;margin-bottom:32px;">
+          We service Calgary and all surrounding areas. When you call Hudson's, you get a crew that shows up, does the job right, and stands behind their work. That's the Hudson's standard.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:#C4182A;font-size:1.1rem;flex-shrink:0;margin-top:2px;">▸</span>
+            <span style="color:#F0EDE8;font-size:0.95rem;line-height:1.6;"><strong>Fully insured, licensed &amp; WCB covered</strong> — you're protected on every job</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:#C4182A;font-size:1.1rem;flex-shrink:0;margin-top:2px;">▸</span>
+            <span style="color:#F0EDE8;font-size:0.95rem;line-height:1.6;"><strong>Residential &amp; commercial</strong> — driveways, parking lots, large commercial sites</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:#C4182A;font-size:1.1rem;flex-shrink:0;margin-top:2px;">▸</span>
+            <span style="color:#F0EDE8;font-size:0.95rem;line-height:1.6;"><strong>Free estimates, no pressure</strong> — know your costs before committing to anything</span>
+          </li>
+        </ul>
+        <a href="#contact" class="btn-red">Get a Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ REVIEWS ═══ -->
+<section id="reviews" style="padding:80px 20px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="reveal" style="margin-bottom:48px;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;">
+      <div>
+        <span class="red-rule"></span>
+        <h2 style="font-size:clamp(2.4rem,6vw,4rem);">What Calgary Customers Say</h2>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+        <span class="stars" style="font-size:1.3rem;">★★★★★</span>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#C4182A;letter-spacing:0.04em;">4.9</span>
+        <span style="font-size:0.82rem;color:#C8C4BE;line-height:1.3;">Based on<br>18 Google reviews</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr;gap:2px;" class="stagger">
+
+      <div class="rev-card">
+        <div class="quote-mark">"</div>
+        <div class="stars" style="font-size:0.9rem;margin-bottom:16px;margin-top:28px;">★★★★★</div>
+        <p style="color:#F0EDE8;font-size:0.97rem;line-height:1.75;margin-bottom:20px;">
+          "Excellent staff and crew — very punctual and doing a very well job. 👍"
+        </p>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:36px;height:36px;background:#C4182A;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;flex-shrink:0;">H</div>
+          <div>
+            <div style="font-weight:600;font-size:0.88rem;color:#F0EDE8;">Happy Customer</div>
+            <div style="font-size:0.78rem;color:#C8C4BE;">Calgary, AB</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev-card">
+        <div class="quote-mark">"</div>
+        <div class="stars" style="font-size:0.9rem;margin-bottom:16px;margin-top:28px;">★★★★★</div>
+        <p style="color:#F0EDE8;font-size:0.97rem;line-height:1.75;margin-bottom:20px;">
+          "Hudson's did our driveway last summer and it looks fantastic. Clean work, showed up on time, and finished in one day. Would recommend to anyone in Calgary."
+        </p>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:36px;height:36px;background:#C4182A;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;flex-shrink:0;">M</div>
+          <div>
+            <div style="font-weight:600;font-size:0.88rem;color:#F0EDE8;">Mike T.</div>
+            <div style="font-size:0.78rem;color:#C8C4BE;">Calgary, AB</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev-card">
+        <div class="quote-mark">"</div>
+        <div class="stars" style="font-size:0.9rem;margin-bottom:16px;margin-top:28px;">★★★★★</div>
+        <p style="color:#F0EDE8;font-size:0.97rem;line-height:1.75;margin-bottom:20px;">
+          "Got a free estimate the same day I called and the price was fair. The crew was professional and left the property spotless. Very happy with the result."
+        </p>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:36px;height:36px;background:#C4182A;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;flex-shrink:0;">S</div>
+          <div>
+            <div style="font-weight:600;font-size:0.88rem;color:#F0EDE8;">Sandra K.</div>
+            <div style="font-size:0.78rem;color:#C8C4BE;">Airdrie, AB</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ SERVICE AREA ═══ -->
+<section style="background:#161616;border-top:1px solid #2A2A2A;border-bottom:1px solid #2A2A2A;padding:48px 20px;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:24px;" class="reveal">
+    <div>
+      <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#C8C4BE;margin-bottom:8px;">Serving Calgary &amp; Surrounding Areas</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span style="background:#1E1E1E;border:1px solid #2A2A2A;padding:6px 14px;font-size:0.85rem;color:#F0EDE8;">Calgary</span>
+        <span style="background:#1E1E1E;border:1px solid #2A2A2A;padding:6px 14px;font-size:0.85rem;color:#F0EDE8;">Airdrie</span>
+        <span style="background:#1E1E1E;border:1px solid #2A2A2A;padding:6px 14px;font-size:0.85rem;color:#F0EDE8;">Okotoks</span>
+        <span style="background:#1E1E1E;border:1px solid #2A2A2A;padding:6px 14px;font-size:0.85rem;color:#F0EDE8;">Chestermere</span>
+        <span style="background:#1E1E1E;border:1px solid #2A2A2A;padding:6px 14px;font-size:0.85rem;color:#F0EDE8;">Cochrane</span>
+        <span style="background:#1E1E1E;border:1px solid #2A2A2A;padding:6px 14px;font-size:0.85rem;color:#F0EDE8;">Strathmore</span>
+        <span style="background:#1E1E1E;border:1px solid #2A2A2A;padding:6px 14px;font-size:0.85rem;color:#C8C4BE;">+ Surrounding Areas</span>
+      </div>
+    </div>
+    <div style="margin-left:auto;">
+      <a href="tel:+15877078341" class="btn-red" aria-label="Call Hudson's Asphalt at (587) 707-8341">Call (587) 707-8341</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CONTACT / FORM ═══ -->
+<section id="contact" style="padding:80px 20px;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div class="reveal" style="margin-bottom:44px;">
+      <span class="red-rule"></span>
+      <h2 style="font-size:clamp(2.4rem,6vw,4rem);margin-bottom:12px;">Get Your Free<br>Asphalt Estimate</h2>
+      <p style="color:#C8C4BE;font-size:1rem;line-height:1.65;">
+        Tell us about your project and we'll get back to you fast. No obligation, no pressure — just a straight quote from Calgary's asphalt specialists.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <!-- n8n webhook URL goes in action="" below -->
+      <form action="" method="POST" id="contact-form" style="display:flex;flex-direction:column;gap:20px;">
+        <!-- Honeypot: hidden from humans, bots fill it in — discard if not empty -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div style="display:grid;grid-template-columns:1fr;gap:20px;">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name *</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(403) 000-0000" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address *</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="service" class="form-label">Service Needed *</label>
+          <select id="service" name="service" class="form-input" required>
+            <option value="">Select a service...</option>
+            <option value="driveway-paving">Driveway Paving</option>
+            <option value="parking-lot-paving">Parking Lot Paving</option>
+            <option value="commercial-asphalt">Commercial Asphalt</option>
+            <option value="crack-sealing">Crack Sealing</option>
+            <option value="sealcoating">Sealcoating</option>
+            <option value="line-painting">Line Painting</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="property-address" class="form-label">Property / Service Address</label>
+          <input type="text" id="property-address" name="property_address" class="form-input" placeholder="Address where work is needed" />
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Project Details</label>
+          <textarea id="message" name="message" class="form-input" placeholder="Describe your project — size, current condition, any deadlines..." rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-red" style="width:100%;justify-content:center;font-size:1.15rem;padding:16px 30px;">
+          Request Free Estimate →
+        </button>
+      </form>
+
+      <div id="form-success" style="display:none;background:#161616;border:1px solid #C4182A;padding:32px;text-align:center;margin-top:12px;">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#C4182A;margin-bottom:8px;">We Got Your Request</div>
+        <p style="color:#C8C4BE;font-size:0.97rem;">We'll be in touch shortly. Or call us directly at <a href="tel:+15877078341" style="color:#F0EDE8;text-decoration:none;" aria-label="Call (587) 707-8341">(587) 707-8341</a>.</p>
+      </div>
+      <div id="form-error" style="display:none;background:#161616;border:1px solid #2A2A2A;padding:20px;margin-top:12px;text-align:center;">
+        <p style="color:#C8C4BE;font-size:0.95rem;">Something went wrong. Please call us directly at <a href="tel:+15877078341" style="color:#F0EDE8;" aria-label="Call (587) 707-8341">(587) 707-8341</a>.</p>
+      </div>
+    </div>
+
+    <!-- Direct call fallback -->
+    <div class="reveal" style="margin-top:36px;padding:24px;background:#161616;border:1px solid #2A2A2A;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#C8C4BE;margin-bottom:4px;">Prefer to Call?</div>
+        <a href="tel:+15877078341" style="font-family:'Bebas Neue',sans-serif;font-size:1.9rem;color:#C4182A;text-decoration:none;letter-spacing:0.04em;" aria-label="Call Hudson's Asphalt at (587) 707-8341">(587) 707-8341</a>
+      </div>
+      <div style="font-size:0.85rem;color:#C8C4BE;line-height:1.5;">
+        Mon–Sat, 9am–5pm<br>Calgary &amp; Surrounding Areas
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════ FOOTER ═══ -->
+<footer style="background:#161616;border-top:1px solid #2A2A2A;padding:48px 20px 32px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:1fr;gap:40px;margin-bottom:40px;">
+      <div>
+        <img src="brand_assets/hudsons-logo2.png" alt="Hudson's Asphalt Services Inc." width="200" height="66" style="height:66px;width:auto;object-fit:contain;margin-bottom:16px;display:block;filter:drop-shadow(0 0 5px rgba(180,0,0,0.45)) drop-shadow(0 1px 3px rgba(0,0,0,0.7));" />
+        <p style="color:#C8C4BE;font-size:0.88rem;line-height:1.7;max-width:300px;">
+          Calgary's asphalt paving specialists. Driveways, parking lots, crack sealing, sealcoating &amp; line painting. 15+ years experience.
+        </p>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#C8C4BE;margin-bottom:14px;">Services</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li><a href="#services" style="color:#C8C4BE;font-size:0.88rem;text-decoration:none;transition:color 0.18s;" onmouseover="this.style.color='#F0EDE8'" onmouseout="this.style.color='#888880'">Driveway Paving</a></li>
+          <li><a href="#services" style="color:#C8C4BE;font-size:0.88rem;text-decoration:none;transition:color 0.18s;" onmouseover="this.style.color='#F0EDE8'" onmouseout="this.style.color='#888880'">Parking Lot Paving</a></li>
+          <li><a href="#services" style="color:#C8C4BE;font-size:0.88rem;text-decoration:none;transition:color 0.18s;" onmouseover="this.style.color='#F0EDE8'" onmouseout="this.style.color='#888880'">Crack Sealing</a></li>
+          <li><a href="#services" style="color:#C8C4BE;font-size:0.88rem;text-decoration:none;transition:color 0.18s;" onmouseover="this.style.color='#F0EDE8'" onmouseout="this.style.color='#888880'">Sealcoating</a></li>
+          <li><a href="#services" style="color:#C8C4BE;font-size:0.88rem;text-decoration:none;transition:color 0.18s;" onmouseover="this.style.color='#F0EDE8'" onmouseout="this.style.color='#888880'">Line Painting</a></li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#C8C4BE;margin-bottom:14px;">Contact</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <a href="tel:+15877078341" style="color:#C8C4BE;font-size:0.88rem;text-decoration:none;" aria-label="Call Hudson's Asphalt at (587) 707-8341">(587) 707-8341</a>
+          <address style="font-style:normal;color:#C8C4BE;font-size:0.88rem;line-height:1.6;">
+            81 Legacy Blvd SE #2203<br>Calgary, AB T2X 2B9
+          </address>
+          <a href="https://www.facebook.com/hudsonasphaltservices" target="_blank" rel="noopener noreferrer" style="color:#C8C4BE;font-size:0.88rem;text-decoration:none;" aria-label="Hudson's Asphalt on Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #2A2A2A;padding-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
+      <p style="color:#C8C4BE;font-size:0.78rem;">&copy; 2025 Hudson's Asphalt Services Inc. All rights reserved. Serving Calgary &amp; surrounding areas.</p>
+      <a href="/privacy-policy.html" style="color:#C8C4BE;font-size:0.78rem;text-decoration:none;" onmouseover="this.style.color='#F0EDE8'" onmouseout="this.style.color='#7A7770'">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ── Nav responsive show/hide ── */
+  (function () {
+    var deskNav = document.querySelector('.desktop-nav');
+    var deskCta = document.querySelector('.desktop-cta');
+    function setNav() {
+      if (window.innerWidth >= 768) {
+        if (deskNav) deskNav.style.display = 'flex';
+        if (deskCta) deskCta.style.display = 'inline-flex';
+      } else {
+        if (deskNav) deskNav.style.display = 'none';
+        if (deskCta) deskCta.style.display = 'none';
+      }
+    }
+    setNav();
+    window.addEventListener('resize', setNav);
+  })();
+
+  /* ── Mobile menu ── */
+  function closeMenu() {
+    document.getElementById('mobile-menu').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('hamburger').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  document.getElementById('menu-close').addEventListener('click', closeMenu);
+
+  /* ── Service card grid: 1 col mobile, 2 col md, 3 col lg ── */
+  (function () {
+    var grid = document.getElementById('svc-grid');
+    function setGrid() {
+      if (window.innerWidth >= 1024) {
+        grid.style.gridTemplateColumns = 'repeat(3, 1fr)';
+      } else if (window.innerWidth >= 640) {
+        grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
+      } else {
+        grid.style.gridTemplateColumns = '1fr';
+      }
+    }
+    setGrid();
+    window.addEventListener('resize', setGrid);
+  })();
+
+  /* ── Work gallery: 1 col mobile, 2 col md ── */
+  (function () {
+    var gallery = document.querySelector('#work [style*="grid-template-columns"]');
+    if (!gallery) return;
+    function setGallery() {
+      gallery.style.gridTemplateColumns = window.innerWidth >= 768 ? 'repeat(2, 1fr)' : '1fr';
+    }
+    setGallery();
+    window.addEventListener('resize', setGallery);
+  })();
+
+  /* ── Trust bar: 2 col mobile, 4 col md ── */
+  (function () {
+    var bar = document.querySelector('#trust > div');
+    if (!bar) return;
+    function setBar() {
+      bar.style.gridTemplateColumns = window.innerWidth >= 768 ? 'repeat(4, 1fr)' : 'repeat(2, 1fr)';
+    }
+    setBar();
+    window.addEventListener('resize', setBar);
+  })();
+
+  /* ── Review grid: 1 col mobile, 3 col lg ── */
+  (function () {
+    var revGrid = document.querySelector('#reviews [style*="grid-template-columns"]');
+    if (!revGrid) return;
+    function setRevGrid() {
+      revGrid.style.gridTemplateColumns = window.innerWidth >= 1024 ? 'repeat(3, 1fr)' : '1fr';
+    }
+    setRevGrid();
+    window.addEventListener('resize', setRevGrid);
+  })();
+
+  /* ── About grid: 1 col mobile, 2 col lg ── */
+  (function () {
+    var aboutGrid = document.querySelector('#about .reveal > div');
+    if (!aboutGrid) return;
+    function setAbout() {
+      aboutGrid.style.gridTemplateColumns = window.innerWidth >= 1024 ? 'repeat(2, 1fr)' : '1fr';
+      if (window.innerWidth >= 1024) {
+        aboutGrid.querySelector('img').style.height = '480px';
+      } else {
+        aboutGrid.querySelector('img').style.height = '280px';
+      }
+    }
+    setAbout();
+    window.addEventListener('resize', setAbout);
+  })();
+
+  /* ── Footer grid: 1 col mobile, 3 col md ── */
+  (function () {
+    var footGrid = document.querySelector('footer .max-w-\\[1200px\\] > div:first-child');
+    // simpler approach via querySelector
+    var footGridEl = document.querySelector('footer div[style*="grid-template-columns"]');
+    if (!footGridEl) return;
+    function setFoot() {
+      footGridEl.style.gridTemplateColumns = window.innerWidth >= 768 ? 'repeat(3, 1fr)' : '1fr';
+    }
+    setFoot();
+    window.addEventListener('resize', setFoot);
+  })();
+
+  /* ── Form contact grid: 1 col mobile, 2 col md ── */
+  (function () {
+    var formGrid = document.querySelector('#contact-form [style*="grid-template-columns"]');
+    if (!formGrid) return;
+    function setFormGrid() {
+      formGrid.style.gridTemplateColumns = window.innerWidth >= 640 ? 'repeat(2, 1fr)' : '1fr';
+    }
+    setFormGrid();
+    window.addEventListener('resize', setFormGrid);
+  })();
+
+  /* ── Scroll reveal ── */
+  (function () {
+    var sel = '.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger';
+    var els = document.querySelectorAll(sel);
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function(el){ obs.observe(el); });
+  })();
+
+  /* ── AJAX Form submission ── */
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var successEl = document.getElementById('form-success');
+    var errorEl   = document.getElementById('form-error');
+    var btn       = form.querySelector('button[type="submit"]');
+    var origText  = btn ? btn.textContent : 'Submit';
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var honey = form.querySelector('input[name="_honey"]');
+      if (honey && honey.value) return;
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      var webhookUrl = form.getAttribute('action');
+      if (!webhookUrl) {
+        console.warn('Form webhook URL is empty — set action="" to your n8n webhook URL before going live.');
+        form.style.display = 'none';
+        if (successEl) successEl.style.display = 'block';
+        return;
+      }
+      try {
+        var data = {};
+        new FormData(form).forEach(function (v, k) { if (k !== '_honey') data[k] = v; });
+        var res = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          if (successEl) successEl.style.display = 'block';
+        } else { throw new Error('error'); }
+      } catch (_) {
+        if (btn) { btn.disabled = false; btn.textContent = origText; }
+        if (errorEl) errorEl.style.display = 'block';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
